@@ -4,7 +4,7 @@ services:
 
   backend:
     image: ghcr.io/xyhelper/claude-share-server:dev
-    container_name: xyucenter
+    container_name: claude-share-server
     ports:
       - "127.0.0.1:8001:8001"
     environment:
@@ -12,12 +12,7 @@ services:
       - CLAUDEPROXY=
       - CALLBACKURL= #本服务回调地址
       - XYUCENTER=  #认证中心地址
-      - AUTH0DOMAIN= #Auth0域名
-      - AUTH0CLIENTID= #Auth0 客户端 ID
-      - AUTH0CLIENTSECRET= #Auth0 客户端密钥
-      - APPID= #子应用appid
-      - APPSECRET= # 子应用appsecret
-      - APPJWTSECRETKEY= #子应用下发token秘钥
+      - APPJWTSECRETKEY= #子应用JWT token秘钥
      
     depends_on:
       mysql:
@@ -27,11 +22,9 @@ services:
     network_mode: host
     volumes:
       - ./backend/manifest:/app/manifest
-      - ./backend/certs:/app/certs
-      - ./backend/config.yaml:/app/config.yaml
     restart: unless-stopped
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8002/health"]
+      test: ["CMD", "curl", "-f", "http://localhost:8001/health"]
       interval: 30s
       timeout: 10s
       retries: 3
