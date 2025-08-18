@@ -128,6 +128,15 @@ cd claude-share-server
 
 7. 初始化数据库，使用工具连接上服务的数据库，执行docker-entrypoint-initdb.d/cool-20250815-091400.sql文件，初始化菜单
 
+8. 使用claude-share-server服务前，需要先确认xyucenter中是否配置了相关服务
+   claude的三种账号服务，约定服务code的前缀规则如下：
+   free账号服务  claude-free-后缀
+   pro服务账号   claude-pro-后缀
+   max服务账号   claude-max-后缀
+   ![alt text](images/image2-7.png)
+
+9. 用户购买对应服务之后，方可使用对应服务的账号，免费服务无需购买
+
 ## 使用方法
 
 选车页面访问地址为 http://服务器 ip:8001
