@@ -12,6 +12,7 @@ services:
       - CLAUDEPROXY=
       - CALLBACKURL= #本服务回调地址
       - XYUCENTER=  #认证中心地址
+      - APPID= #子应用ID
       - APPJWTSECRETKEY= #子应用JWT token秘钥
      
     depends_on:

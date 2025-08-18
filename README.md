@@ -97,9 +97,11 @@ cd claude-share-server
 
 11. 登录管理后台 https://域名/xyhelper/，可以配置子应用以及商品服务信息
    ![alt text](images/image-14.png)
+   ![alt text](images/image-15.png)
+   ![alt text](images/image-16.png)
 
 12. 用户登录 https://域名/xyucenter/，可以自行订购服务、充值等
-   ![alt text](images/image-15.png)
+   ![alt text](images/image-17.png)
 
 部署claude-share-server项目
 
@@ -114,6 +116,7 @@ cd claude-share-server
    CLAUDEPROXY         服务转发地址  
    CALLBACKURL         claude-share-server的服务域名或地址  
    XYUCENTER           xyucenter服务地址（上文中部署xyucenter项目中的服务地址）  
+   APPID               子应用在xyuecnter中注册的应用代码（xyucenter部署步骤中的11步配置的应用代码）
    APPJWTSECRETKEY     子应用jwt密钥（与上文中部署xyucenter项目中环境变量配置的JWT_SECRET_KEY保持一致）
 
 4. 配置项目服务端口，mysql和redis的端口号
@@ -128,7 +131,7 @@ cd claude-share-server
 
 7. 初始化数据库，使用工具连接上服务的数据库，执行docker-entrypoint-initdb.d/cool-20250815-091400.sql文件，初始化菜单
 
-8. 使用claude-share-server服务前，需要先确认xyucenter中是否配置了相关服务
+8. 使用claude-share-server服务前，需要先确认xyucenter中是否配置了相关服务，在xyucenter部署步骤中的11步配置
    claude的三种账号服务，约定服务code的前缀规则如下：  
    free账号服务  claude-free-后缀  
    pro服务账号   claude-pro-后缀  
