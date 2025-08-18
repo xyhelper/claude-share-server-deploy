@@ -61,8 +61,8 @@ cd claude-share-server
    ![alt text](images/image-3.png)
    ![alt text](images/image-4.png)
    服务的访问域名地址确定之后，修改AUTH0_CALLBACK_URL值，设置AUTH0允许回调地址
-   将中心回调地址和子应用回调地址配置在Allowed Callback URLs和Allowed Logout URLs上
-   中心回调地址：AUTH0_CALLBACK_URL/api/v1/center/getToken
+   将中心回调地址和子应用回调地址配置在Allowed Callback URLs和Allowed Logout URLs上  
+   中心回调地址：AUTH0_CALLBACK_URL/api/v1/center/getToken  
    子应用回调地址：AUTH0_CALLBACK_URL/auth0/callback
    ![alt text](images/image-5.png)
 
