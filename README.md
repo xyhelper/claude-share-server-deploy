@@ -80,9 +80,9 @@ cd claude-share-server
    在项目根目录创建certs/alipay和certs/wechatpay目录，将支付宝证书和微信支付证书放入，微信支付采用v3版本，秘钥使用.pem格式
    ![alt text](images/image-9.png)
 
-7. 修改config/config.yaml文件中的支付配置
-   其中wechat_pay（微信支付）notify_url（回调地址）配置：服务域名地址/api/v1/payment/wechat/callback
-      alipay_pay (支付宝支付) notify_url（回调地址）配置：服务域名地址/api/v1/payment/alipay/callback
+7. 修改config/config.yaml文件中的支付配置  
+   其中wechat_pay（微信支付）notify_url（回调地址）配置：服务域名地址/api/v1/payment/wechat/callback  
+      alipay_pay (支付宝支付) notify_url（回调地址）配置：服务域名地址/api/v1/payment/alipay/callback  
       alipay_pay (支付宝支付) return_url（支付成功回调页面）配置：服务域名地址/xyucenter/#/userOrders
    ![alt text](image.png)
 
@@ -110,11 +110,11 @@ cd claude-share-server
 2. 项目克隆之后，打开该项目，打开之后如下图所示，打开docker-compose.yml，修改环境变量
    ![alt text](images/image2-2.png)
 
-3. 找到backend服务下面的environment，配置一下环境变量
-    CLAUDEPROXY         服务转发地址
-    CALLBACKURL         claude-share-server的服务域名或地址
-    XYUCENTER           xyucenter服务地址（上文中部署xyucenter项目中的服务地址）
-    APPJWTSECRETKEY     子应用jwt密钥（与上文中部署xyucenter项目中环境变量配置的JWT_SECRET_KEY保持一致）
+3. 找到backend服务下面的environment，配置一下环境变量  
+   CLAUDEPROXY         服务转发地址  
+   CALLBACKURL         claude-share-server的服务域名或地址  
+   XYUCENTER           xyucenter服务地址（上文中部署xyucenter项目中的服务地址）  
+   APPJWTSECRETKEY     子应用jwt密钥（与上文中部署xyucenter项目中环境变量配置的JWT_SECRET_KEY保持一致）
 
 4. 配置项目服务端口，mysql和redis的端口号
    ![alt text](images/image2-3.png)
@@ -129,9 +129,9 @@ cd claude-share-server
 7. 初始化数据库，使用工具连接上服务的数据库，执行docker-entrypoint-initdb.d/cool-20250815-091400.sql文件，初始化菜单
 
 8. 使用claude-share-server服务前，需要先确认xyucenter中是否配置了相关服务
-   claude的三种账号服务，约定服务code的前缀规则如下：
-   free账号服务  claude-free-后缀
-   pro服务账号   claude-pro-后缀
+   claude的三种账号服务，约定服务code的前缀规则如下：  
+   free账号服务  claude-free-后缀  
+   pro服务账号   claude-pro-后缀  
    max服务账号   claude-max-后缀
    ![alt text](images/image2-7.png)
 
