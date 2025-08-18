@@ -22,6 +22,7 @@ services:
     network_mode: host
     volumes:
       - ./backend/manifest:/app/manifest
+      - ./config/config.yaml:/app/config.yaml
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8001/health"]
