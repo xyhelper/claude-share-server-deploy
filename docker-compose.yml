@@ -3,10 +3,9 @@ version: '3.8'
 services:
 
   backend:
-    image: ghcr.io/xyhelper/claude-share-server:dev
-    container_name: claude-share-server
+    image: ghcr.io/xyhelper/claude-share-server
     ports:
-      - "127.0.0.1:8001:8001"
+      - "8700:8001"
     environment:
       - TZ=Asia/Shanghai
       - CLAUDEPROXY=
@@ -14,23 +13,15 @@ services:
       - XYUCENTER=  #认证中心地址
       - APPID= #子应用ID
       - APPJWTSECRETKEY= #子应用JWT token秘钥
-     
     depends_on:
       mysql:
         condition: service_healthy
       redis:
         condition: service_healthy
-    network_mode: host
     volumes:
       - ./backend/manifest:/app/manifest
       - ./config/config.yaml:/app/config.yaml
     restart: unless-stopped
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8001/health"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 40s
 
   mysql:
     image: mysql:8
@@ -44,14 +35,6 @@ services:
       MYSQL_DATABASE: "cool"
       MYSQL_USER: "cool"
       MYSQL_PASSWORD: "123123"
-    ports:
-      - 127.0.0.1:3306:3306
-    healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p123456"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-      start_period: 30s
     restart: unless-stopped
 
   redis:
@@ -60,16 +43,4 @@ services:
       TZ: Asia/Shanghai
     volumes:
       - ./data/redis/:/data/
-    ports:
-      - 127.0.0.1:6379:6379
-    healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-      start_period: 10s
     restart: unless-stopped
-
-volumes:
-  mysql-data:
-  redis-data: 

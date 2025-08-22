@@ -64,26 +64,21 @@ cd claude-share-server
    APPID               子应用在xyuecnter中注册的应用代码（xyucenter部署步骤中的11步配置的应用代码）
    APPJWTSECRETKEY     子应用jwt密钥（与部署xyucenter项目中环境变量配置的JWT_SECRET_KEY保持一致）
 
-4. 配置项目服务端口，mysql和redis的端口号
-   ![alt text](images/image2-3.png)
-   ![alt text](images/image2-4.png)
-   ![alt text](images/image2-5.png)
+4. 修改config/config.yaml服务端口、mysql配置以及redis配置，与4保持一致，尤其是端口号配置
 
-5. 修改config/config.yaml服务端口、mysql配置以及redis配置，与4保持一致，尤其是端口号配置
-
-6. 命令终端，输入cd claude-share-server进入到项目中，再执行./deploy.sh，启动项目
+5. 命令终端，输入cd claude-share-server进入到项目中，再执行./deploy.sh，启动项目
    ![alt text](images/image2-6.png)
 
-7. 初始化数据库，使用工具连接上服务的数据库，执行docker-entrypoint-initdb.d/cool-20250815-091400.sql文件，初始化菜单
+6. 初始化数据库，使用工具连接上服务的数据库，执行docker-entrypoint-initdb.d/cool-20250815-091400.sql文件，初始化菜单
 
-8. 使用claude-share-server服务前，需要先确认xyucenter中是否配置了相关服务，在xyucenter部署步骤中的11步配置
+7. 使用claude-share-server服务前，需要先确认xyucenter中是否配置了相关服务，在xyucenter部署步骤中的11步配置
    claude的三种账号服务，约定服务code的前缀规则如下：  
    free账号服务  claude-free-后缀  
    pro服务账号   claude-pro-后缀  
    max服务账号   claude-max-后缀
    ![alt text](images/image2-7.png)
 
-9. 用户购买对应服务之后，方可使用对应服务的账号，免费服务无需购买
+8. 用户购买对应服务之后，方可使用对应服务的账号，免费服务无需购买
 
 ## 使用方法
 
