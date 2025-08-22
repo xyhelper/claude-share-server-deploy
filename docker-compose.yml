@@ -10,7 +10,7 @@ services:
       - TZ=Asia/Shanghai
       - CLAUDEPROXY=
       - CALLBACKURL= #本服务回调地址
-      - XYUCENTER=  #认证中心地址
+      - XYUCENTER=  #xyucenter（认证中心）部署地址
       - APPID= #子应用ID
       - APPJWTSECRETKEY= #子应用JWT token秘钥
     depends_on:
