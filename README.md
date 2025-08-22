@@ -52,10 +52,10 @@ cd claude-share-server
 
 1. 克隆claude-share-server-deploy仓库到服务器上，使用vscode连接上远程服务器，然后选择克隆项目，输入下面git clone命令
    git clone --depth=1 https://github.com/xyhelper/claude-share-server-deploy.git claude-share-server
-   ![alt text](images/image2-1.png)
+   ![alt text](images/image-1.png)
 
 2. 项目克隆之后，打开该项目，打开之后如下图所示，打开docker-compose.yml，修改环境变量
-   ![alt text](images/image2-2.png)
+   ![alt text](images/image-2.png)
 
 3. 找到backend服务下面的environment，配置一下环境变量  
    CLAUDEPROXY         服务转发地址  
@@ -65,7 +65,7 @@ cd claude-share-server
    APPJWTSECRETKEY     子应用jwt密钥（与部署xyucenter项目中环境变量配置的JWT_SECRET_KEY保持一致）
 
 4. 命令终端，输入cd claude-share-server进入到项目中，再执行./deploy.sh，启动项目
-   ![alt text](images/image2-6.png)
+   ![alt text](images/image-3.png)
 
 5. 初始化数据库，使用工具连接上服务的数据库，执行docker-entrypoint-initdb.d/cool-20250815-091400.sql文件，初始化菜单
 
@@ -74,7 +74,7 @@ cd claude-share-server
    free账号服务  claude-free-后缀  
    pro服务账号   claude-pro-后缀  
    max服务账号   claude-max-后缀
-   ![alt text](images/image2-7.png)
+   ![alt text](images/image-4.png)
 
 7. 用户购买对应服务之后，方可使用对应服务的账号，免费服务无需购买
 
