@@ -60,9 +60,9 @@ cd claude-share-server
 3. 找到backend服务下面的environment，配置一下环境变量  
    CLAUDEPROXY         服务转发地址  
    CALLBACKURL         claude-share-server的服务域名或地址  
-   XYUCENTER           xyucenter服务地址（上文中部署xyucenter项目中的服务地址）  
+   XYUCENTER           xyucenter服务地址（部署xyucenter项目中的服务地址）  
    APPID               子应用在xyuecnter中注册的应用代码（xyucenter部署步骤中的11步配置的应用代码）
-   APPJWTSECRETKEY     子应用jwt密钥（与上文中部署xyucenter项目中环境变量配置的JWT_SECRET_KEY保持一致）
+   APPJWTSECRETKEY     子应用jwt密钥（与部署xyucenter项目中环境变量配置的JWT_SECRET_KEY保持一致）
 
 4. 配置项目服务端口，mysql和redis的端口号
    ![alt text](images/image2-3.png)
