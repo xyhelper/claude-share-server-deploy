@@ -1,17 +1,17 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : docker镜像中的
+ Source Server         : docker镜像-claude-share
  Source Server Type    : MySQL
  Source Server Version : 80406
- Source Host           : localhost:3307
+ Source Host           : localhost:60828
  Source Schema         : cool
 
  Target Server Type    : MySQL
  Target Server Version : 80406
  File Encoding         : 65001
 
- Date: 12/08/2025 16:09:32
+ Date: 03/09/2025 17:04:51
 */
 
 SET NAMES utf8mb4;
@@ -23,120 +23,120 @@ SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE IF EXISTS `base_eps_admin`;
 CREATE TABLE `base_eps_admin` (
   `id` bigint NOT NULL AUTO_INCREMENT,
-  `module` longtext COLLATE utf8mb4_unicode_ci,
-  `method` longtext COLLATE utf8mb4_unicode_ci,
-  `path` longtext COLLATE utf8mb4_unicode_ci,
-  `prefix` longtext COLLATE utf8mb4_unicode_ci,
-  `summary` longtext COLLATE utf8mb4_unicode_ci,
-  `tag` longtext COLLATE utf8mb4_unicode_ci,
-  `dts` longtext COLLATE utf8mb4_unicode_ci,
+  `module` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `method` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `path` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `prefix` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `summary` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `tag` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `dts` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=101 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1201 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- ----------------------------
 -- Records of base_eps_admin
 -- ----------------------------
 BEGIN;
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1, 'base', 'POST', '/logout', '/admin/base/comm', 'logout', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (2, 'base', 'GET', '/permmenu', '/admin/base/comm', 'permmenu', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (3, 'base', 'GET', '/person', '/admin/base/comm', 'person', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (4, 'base', 'POST', '/personUpdate', '/admin/base/comm', 'personUpdate', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (5, 'base', 'POST', '/upload', '/admin/base/comm', 'upload', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (6, 'base', 'GET', '/uploadMode', '/admin/base/comm', 'uploadMode', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (7, 'base', 'GET', '/captcha', '/admin/base/open', 'captcha', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (8, 'base', 'GET', '/eps', '/admin/base/open', 'eps', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (9, 'base', 'POST', '/login', '/admin/base/open', 'login', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (10, 'base', 'GET', '/refreshToken', '/admin/base/open', 'refreshToken', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (11, 'base', 'POST', '/add', '/admin/base/sys/department', 'add', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (12, 'base', 'POST', '/delete', '/admin/base/sys/department', 'delete', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (13, 'base', 'GET', '/info', '/admin/base/sys/department', 'info', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (14, 'base', 'POST', '/list', '/admin/base/sys/department', 'list', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (15, 'base', 'GET', '/order', '/admin/base/sys/department', 'order', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (16, 'base', 'POST', '/page', '/admin/base/sys/department', 'page', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (17, 'base', 'POST', '/update', '/admin/base/sys/department', 'update', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (18, 'base', 'POST', '/add', '/admin/base/sys/log', 'add', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (19, 'base', 'POST', '/clear', '/admin/base/sys/log', 'clear', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (20, 'base', 'POST', '/delete', '/admin/base/sys/log', 'delete', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (21, 'base', 'GET', '/getKeep', '/admin/base/sys/log', 'getKeep', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (22, 'base', 'GET', '/info', '/admin/base/sys/log', 'info', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (23, 'base', 'POST', '/list', '/admin/base/sys/log', 'list', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (24, 'base', 'POST', '/page', '/admin/base/sys/log', 'page', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (25, 'base', 'POST', '/setKeep', '/admin/base/sys/log', 'setKeep', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (26, 'base', 'POST', '/update', '/admin/base/sys/log', 'update', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (27, 'base', 'POST', '/add', '/admin/base/sys/menu', 'add', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (28, 'base', 'POST', '/delete', '/admin/base/sys/menu', 'delete', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (29, 'base', 'GET', '/info', '/admin/base/sys/menu', 'info', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (30, 'base', 'POST', '/list', '/admin/base/sys/menu', 'list', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (31, 'base', 'POST', '/page', '/admin/base/sys/menu', 'page', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (32, 'base', 'POST', '/update', '/admin/base/sys/menu', 'update', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (33, 'base', 'POST', '/add', '/admin/base/sys/param', 'add', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (34, 'base', 'POST', '/delete', '/admin/base/sys/param', 'delete', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (35, 'base', 'GET', '/html', '/admin/base/sys/param', 'html', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (36, 'base', 'GET', '/info', '/admin/base/sys/param', 'info', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (37, 'base', 'POST', '/list', '/admin/base/sys/param', 'list', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (38, 'base', 'POST', '/page', '/admin/base/sys/param', 'page', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (39, 'base', 'POST', '/update', '/admin/base/sys/param', 'update', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (40, 'base', 'POST', '/add', '/admin/base/sys/role', 'add', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (41, 'base', 'POST', '/delete', '/admin/base/sys/role', 'delete', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (42, 'base', 'GET', '/info', '/admin/base/sys/role', 'info', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (43, 'base', 'POST', '/list', '/admin/base/sys/role', 'list', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (44, 'base', 'POST', '/page', '/admin/base/sys/role', 'page', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (45, 'base', 'POST', '/update', '/admin/base/sys/role', 'update', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (46, 'base', 'POST', '/add', '/admin/base/sys/user', 'add', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (47, 'base', 'POST', '/delete', '/admin/base/sys/user', 'delete', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (48, 'base', 'GET', '/info', '/admin/base/sys/user', 'info', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (49, 'base', 'POST', '/list', '/admin/base/sys/user', 'list', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (50, 'base', 'GET', '/move', '/admin/base/sys/user', 'move', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (51, 'base', 'POST', '/page', '/admin/base/sys/user', 'page', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (52, 'base', 'POST', '/update', '/admin/base/sys/user', 'update', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (53, 'claude', 'POST', '/add', '/admin/claude/conversations', 'add', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (54, 'claude', 'POST', '/delete', '/admin/claude/conversations', 'delete', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (55, 'claude', 'GET', '/info', '/admin/claude/conversations', 'info', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (56, 'claude', 'POST', '/list', '/admin/claude/conversations', 'list', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (57, 'claude', 'POST', '/page', '/admin/claude/conversations', 'page', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (58, 'claude', 'POST', '/update', '/admin/claude/conversations', 'update', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (59, 'claude', 'POST', '/add', '/admin/claude/session', 'add', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (60, 'claude', 'POST', '/addbulk', '/admin/claude/session', 'addbulk', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (61, 'claude', 'POST', '/delete', '/admin/claude/session', 'delete', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (62, 'claude', 'GET', '/info', '/admin/claude/session', 'info', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (63, 'claude', 'POST', '/list', '/admin/claude/session', 'list', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (64, 'claude', 'POST', '/page', '/admin/claude/session', 'page', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (65, 'claude', 'POST', '/update', '/admin/claude/session', 'update', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (66, 'dict', 'POST', '/add', '/admin/dict/info', 'add', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (67, 'dict', 'POST', '/data', '/admin/dict/info', 'data', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (68, 'dict', 'POST', '/delete', '/admin/dict/info', 'delete', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (69, 'dict', 'GET', '/info', '/admin/dict/info', 'info', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (70, 'dict', 'POST', '/list', '/admin/dict/info', 'list', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (71, 'dict', 'POST', '/page', '/admin/dict/info', 'page', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (72, 'dict', 'POST', '/update', '/admin/dict/info', 'update', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (73, 'dict', 'POST', '/add', '/admin/dict/type', 'add', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (74, 'dict', 'POST', '/delete', '/admin/dict/type', 'delete', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (75, 'dict', 'GET', '/info', '/admin/dict/type', 'info', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (76, 'dict', 'POST', '/list', '/admin/dict/type', 'list', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (77, 'dict', 'POST', '/page', '/admin/dict/type', 'page', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (78, 'dict', 'POST', '/update', '/admin/dict/type', 'update', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (79, 'space', 'POST', '/add', '/admin/space/info', 'add', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (80, 'space', 'POST', '/delete', '/admin/space/info', 'delete', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (81, 'space', 'GET', '/info', '/admin/space/info', 'info', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (82, 'space', 'POST', '/list', '/admin/space/info', 'list', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (83, 'space', 'POST', '/page', '/admin/space/info', 'page', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (84, 'space', 'POST', '/update', '/admin/space/info', 'update', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (85, 'space', 'POST', '/add', '/admin/space/type', 'add', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (86, 'space', 'POST', '/delete', '/admin/space/type', 'delete', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (87, 'space', 'GET', '/info', '/admin/space/type', 'info', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (88, 'space', 'POST', '/list', '/admin/space/type', 'list', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (89, 'space', 'POST', '/page', '/admin/space/type', 'page', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (90, 'space', 'POST', '/update', '/admin/space/type', 'update', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (91, 'task', 'POST', '/add', '/admin/task/info', 'add', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (92, 'task', 'POST', '/delete', '/admin/task/info', 'delete', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (93, 'task', 'GET', '/info', '/admin/task/info', 'info', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (94, 'task', 'POST', '/list', '/admin/task/info', 'list', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (95, 'task', 'GET', '/log', '/admin/task/info', 'log', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (96, 'task', 'POST', '/once', '/admin/task/info', 'once', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (97, 'task', 'POST', '/page', '/admin/task/info', 'page', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (98, 'task', 'GET', '/start', '/admin/task/info', 'start', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (99, 'task', 'GET', '/stop', '/admin/task/info', 'stop', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (100, 'task', 'POST', '/update', '/admin/task/info', 'update', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1101, 'base', 'POST', '/logout', '/admin/base/comm', 'logout', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1102, 'base', 'GET', '/permmenu', '/admin/base/comm', 'permmenu', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1103, 'base', 'GET', '/person', '/admin/base/comm', 'person', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1104, 'base', 'POST', '/personUpdate', '/admin/base/comm', 'personUpdate', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1105, 'base', 'POST', '/upload', '/admin/base/comm', 'upload', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1106, 'base', 'GET', '/uploadMode', '/admin/base/comm', 'uploadMode', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1107, 'base', 'GET', '/captcha', '/admin/base/open', 'captcha', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1108, 'base', 'GET', '/eps', '/admin/base/open', 'eps', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1109, 'base', 'POST', '/login', '/admin/base/open', 'login', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1110, 'base', 'GET', '/refreshToken', '/admin/base/open', 'refreshToken', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1111, 'base', 'POST', '/add', '/admin/base/sys/department', 'add', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1112, 'base', 'POST', '/delete', '/admin/base/sys/department', 'delete', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1113, 'base', 'GET', '/info', '/admin/base/sys/department', 'info', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1114, 'base', 'POST', '/list', '/admin/base/sys/department', 'list', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1115, 'base', 'GET', '/order', '/admin/base/sys/department', 'order', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1116, 'base', 'POST', '/page', '/admin/base/sys/department', 'page', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1117, 'base', 'POST', '/update', '/admin/base/sys/department', 'update', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1118, 'base', 'POST', '/add', '/admin/base/sys/log', 'add', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1119, 'base', 'POST', '/clear', '/admin/base/sys/log', 'clear', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1120, 'base', 'POST', '/delete', '/admin/base/sys/log', 'delete', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1121, 'base', 'GET', '/getKeep', '/admin/base/sys/log', 'getKeep', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1122, 'base', 'GET', '/info', '/admin/base/sys/log', 'info', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1123, 'base', 'POST', '/list', '/admin/base/sys/log', 'list', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1124, 'base', 'POST', '/page', '/admin/base/sys/log', 'page', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1125, 'base', 'POST', '/setKeep', '/admin/base/sys/log', 'setKeep', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1126, 'base', 'POST', '/update', '/admin/base/sys/log', 'update', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1127, 'base', 'POST', '/add', '/admin/base/sys/menu', 'add', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1128, 'base', 'POST', '/delete', '/admin/base/sys/menu', 'delete', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1129, 'base', 'GET', '/info', '/admin/base/sys/menu', 'info', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1130, 'base', 'POST', '/list', '/admin/base/sys/menu', 'list', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1131, 'base', 'POST', '/page', '/admin/base/sys/menu', 'page', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1132, 'base', 'POST', '/update', '/admin/base/sys/menu', 'update', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1133, 'base', 'POST', '/add', '/admin/base/sys/param', 'add', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1134, 'base', 'POST', '/delete', '/admin/base/sys/param', 'delete', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1135, 'base', 'GET', '/html', '/admin/base/sys/param', 'html', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1136, 'base', 'GET', '/info', '/admin/base/sys/param', 'info', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1137, 'base', 'POST', '/list', '/admin/base/sys/param', 'list', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1138, 'base', 'POST', '/page', '/admin/base/sys/param', 'page', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1139, 'base', 'POST', '/update', '/admin/base/sys/param', 'update', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1140, 'base', 'POST', '/add', '/admin/base/sys/role', 'add', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1141, 'base', 'POST', '/delete', '/admin/base/sys/role', 'delete', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1142, 'base', 'GET', '/info', '/admin/base/sys/role', 'info', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1143, 'base', 'POST', '/list', '/admin/base/sys/role', 'list', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1144, 'base', 'POST', '/page', '/admin/base/sys/role', 'page', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1145, 'base', 'POST', '/update', '/admin/base/sys/role', 'update', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1146, 'base', 'POST', '/add', '/admin/base/sys/user', 'add', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1147, 'base', 'POST', '/delete', '/admin/base/sys/user', 'delete', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1148, 'base', 'GET', '/info', '/admin/base/sys/user', 'info', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1149, 'base', 'POST', '/list', '/admin/base/sys/user', 'list', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1150, 'base', 'GET', '/move', '/admin/base/sys/user', 'move', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1151, 'base', 'POST', '/page', '/admin/base/sys/user', 'page', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1152, 'base', 'POST', '/update', '/admin/base/sys/user', 'update', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1153, 'claude', 'POST', '/add', '/admin/claude/conversations', 'add', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1154, 'claude', 'POST', '/delete', '/admin/claude/conversations', 'delete', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1155, 'claude', 'GET', '/info', '/admin/claude/conversations', 'info', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1156, 'claude', 'POST', '/list', '/admin/claude/conversations', 'list', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1157, 'claude', 'POST', '/page', '/admin/claude/conversations', 'page', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1158, 'claude', 'POST', '/update', '/admin/claude/conversations', 'update', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1159, 'claude', 'POST', '/add', '/admin/claude/session', 'add', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1160, 'claude', 'POST', '/addbulk', '/admin/claude/session', 'addbulk', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1161, 'claude', 'POST', '/delete', '/admin/claude/session', 'delete', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1162, 'claude', 'GET', '/info', '/admin/claude/session', 'info', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1163, 'claude', 'POST', '/list', '/admin/claude/session', 'list', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1164, 'claude', 'POST', '/page', '/admin/claude/session', 'page', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1165, 'claude', 'POST', '/update', '/admin/claude/session', 'update', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1166, 'dict', 'POST', '/add', '/admin/dict/info', 'add', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1167, 'dict', 'POST', '/data', '/admin/dict/info', 'data', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1168, 'dict', 'POST', '/delete', '/admin/dict/info', 'delete', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1169, 'dict', 'GET', '/info', '/admin/dict/info', 'info', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1170, 'dict', 'POST', '/list', '/admin/dict/info', 'list', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1171, 'dict', 'POST', '/page', '/admin/dict/info', 'page', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1172, 'dict', 'POST', '/update', '/admin/dict/info', 'update', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1173, 'dict', 'POST', '/add', '/admin/dict/type', 'add', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1174, 'dict', 'POST', '/delete', '/admin/dict/type', 'delete', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1175, 'dict', 'GET', '/info', '/admin/dict/type', 'info', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1176, 'dict', 'POST', '/list', '/admin/dict/type', 'list', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1177, 'dict', 'POST', '/page', '/admin/dict/type', 'page', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1178, 'dict', 'POST', '/update', '/admin/dict/type', 'update', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1179, 'space', 'POST', '/add', '/admin/space/info', 'add', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1180, 'space', 'POST', '/delete', '/admin/space/info', 'delete', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1181, 'space', 'GET', '/info', '/admin/space/info', 'info', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1182, 'space', 'POST', '/list', '/admin/space/info', 'list', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1183, 'space', 'POST', '/page', '/admin/space/info', 'page', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1184, 'space', 'POST', '/update', '/admin/space/info', 'update', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1185, 'space', 'POST', '/add', '/admin/space/type', 'add', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1186, 'space', 'POST', '/delete', '/admin/space/type', 'delete', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1187, 'space', 'GET', '/info', '/admin/space/type', 'info', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1188, 'space', 'POST', '/list', '/admin/space/type', 'list', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1189, 'space', 'POST', '/page', '/admin/space/type', 'page', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1190, 'space', 'POST', '/update', '/admin/space/type', 'update', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1191, 'task', 'POST', '/add', '/admin/task/info', 'add', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1192, 'task', 'POST', '/delete', '/admin/task/info', 'delete', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1193, 'task', 'GET', '/info', '/admin/task/info', 'info', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1194, 'task', 'POST', '/list', '/admin/task/info', 'list', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1195, 'task', 'GET', '/log', '/admin/task/info', 'log', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1196, 'task', 'POST', '/once', '/admin/task/info', 'once', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1197, 'task', 'POST', '/page', '/admin/task/info', 'page', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1198, 'task', 'GET', '/start', '/admin/task/info', 'start', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1199, 'task', 'GET', '/stop', '/admin/task/info', 'stop', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1200, 'task', 'POST', '/update', '/admin/task/info', 'update', '', '');
 COMMIT;
 
 -- ----------------------------
@@ -145,13 +145,13 @@ COMMIT;
 DROP TABLE IF EXISTS `base_eps_app`;
 CREATE TABLE `base_eps_app` (
   `id` bigint NOT NULL AUTO_INCREMENT,
-  `module` longtext COLLATE utf8mb4_unicode_ci,
-  `method` longtext COLLATE utf8mb4_unicode_ci,
-  `path` longtext COLLATE utf8mb4_unicode_ci,
-  `prefix` longtext COLLATE utf8mb4_unicode_ci,
-  `summary` longtext COLLATE utf8mb4_unicode_ci,
-  `tag` longtext COLLATE utf8mb4_unicode_ci,
-  `dts` longtext COLLATE utf8mb4_unicode_ci,
+  `module` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `method` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `path` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `prefix` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `summary` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `tag` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `dts` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -170,8 +170,8 @@ CREATE TABLE `base_sys_conf` (
   `createTime` datetime(3) NOT NULL COMMENT '创建时间',
   `updateTime` datetime(3) NOT NULL COMMENT '更新时间',
   `deleted_at` datetime(3) DEFAULT NULL,
-  `cKey` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `cValue` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `cKey` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `cValue` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`),
   KEY `idx_base_sys_conf_deleted_at` (`deleted_at`),
   KEY `idx_base_sys_conf_c_key` (`cKey`)
@@ -192,7 +192,7 @@ CREATE TABLE `base_sys_department` (
   `createTime` datetime(3) NOT NULL COMMENT '创建时间',
   `updateTime` datetime(3) NOT NULL COMMENT '更新时间',
   `deleted_at` datetime(3) DEFAULT NULL,
-  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `parentId` bigint DEFAULT NULL,
   `orderNum` int NOT NULL,
   PRIMARY KEY (`id`),
@@ -215,8 +215,8 @@ COMMIT;
 DROP TABLE IF EXISTS `base_sys_init`;
 CREATE TABLE `base_sys_init` (
   `id` bigint unsigned NOT NULL AUTO_INCREMENT,
-  `table` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `group` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `table` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `group` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`),
   KEY `idx_base_sys_init_table` (`table`),
   KEY `idx_base_sys_init_group` (`group`)
@@ -249,64 +249,22 @@ CREATE TABLE `base_sys_log` (
   `updateTime` datetime(3) NOT NULL COMMENT '更新时间',
   `deleted_at` datetime(3) DEFAULT NULL,
   `userId` bigint unsigned DEFAULT NULL,
-  `action` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `ip` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `ipAddr` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `params` longtext COLLATE utf8mb4_unicode_ci,
+  `action` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ip` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `ipAddr` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `params` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   PRIMARY KEY (`id`),
   KEY `idx_base_sys_log_deleted_at` (`deleted_at`),
   KEY `IDX_51a2caeb5713efdfcb343a8772` (`userId`),
   KEY `IDX_938f886fb40e163db174b7f6c3` (`action`),
   KEY `IDX_24e18767659f8c7142580893f2` (`ip`),
   KEY `IDX_a03a27f75cf8d502b3060823e1` (`ipAddr`)
-) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=401 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- ----------------------------
 -- Records of base_sys_log
 -- ----------------------------
 BEGIN;
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (1, '2025-08-12 16:03:26.295', '2025-08-12 16:03:26.295', NULL, 0, 'GET:/admin/base/open/eps', '188.253.126.213', '188.253.126.213', '');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (2, '2025-08-12 16:03:31.617', '2025-08-12 16:03:31.617', NULL, 0, 'GET:/admin/base/open/captcha', '188.253.126.213', '188.253.126.213', '');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (3, '2025-08-12 16:03:46.254', '2025-08-12 16:03:46.254', NULL, 0, 'POST:/admin/base/open/login', '188.253.126.213', '188.253.126.213', '{\"username\":\"admin\",\"password\":\"123456\",\"captchaId\":\"1v92h82ch90dc0ajrqji0o9200cr1edz\",\"verifyCode\":\"1679\"}');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (4, '2025-08-12 16:03:46.522', '2025-08-12 16:03:46.522', NULL, 1, 'POST:/admin/dict/info/data', '188.253.126.213', '188.253.126.213', '{}');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (5, '2025-08-12 16:03:46.523', '2025-08-12 16:03:46.523', NULL, 1, 'GET:/admin/base/comm/permmenu', '188.253.126.213', '188.253.126.213', '');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (6, '2025-08-12 16:03:46.540', '2025-08-12 16:03:46.540', NULL, 1, 'GET:/admin/base/comm/person', '188.253.126.213', '188.253.126.213', '');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (7, '2025-08-12 16:04:34.630', '2025-08-12 16:04:34.630', NULL, 1, 'POST:/admin/base/sys/menu/list', '188.253.126.213', '188.253.126.213', '');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (8, '2025-08-12 16:05:53.633', '2025-08-12 16:05:53.633', NULL, 0, 'GET:/admin/base/open/eps', '188.253.126.213', '188.253.126.213', '');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (9, '2025-08-12 16:05:54.333', '2025-08-12 16:05:54.333', NULL, 1, 'GET:/admin/base/comm/permmenu', '188.253.126.213', '188.253.126.213', '');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (10, '2025-08-12 16:05:54.339', '2025-08-12 16:05:54.339', NULL, 1, 'GET:/admin/base/comm/person', '188.253.126.213', '188.253.126.213', '');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (11, '2025-08-12 16:05:54.789', '2025-08-12 16:05:54.789', NULL, 1, 'POST:/admin/dict/info/data', '188.253.126.213', '188.253.126.213', '{}');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (12, '2025-08-12 16:05:56.869', '2025-08-12 16:05:56.869', NULL, 1, 'POST:/admin/base/sys/menu/list', '188.253.126.213', '188.253.126.213', '');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (13, '2025-08-12 16:06:15.054', '2025-08-12 16:06:15.054', NULL, 1, 'POST:/admin/base/sys/menu/list', '188.253.126.213', '188.253.126.213', '');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (14, '2025-08-12 16:06:15.054', '2025-08-12 16:06:15.054', NULL, 1, 'GET:/admin/base/sys/menu/info', '188.253.126.213', '188.253.126.213', '');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (15, '2025-08-12 16:06:19.664', '2025-08-12 16:06:19.664', NULL, 1, 'POST:/admin/base/sys/menu/update', '188.253.126.213', '188.253.126.213', '{\"type\":1,\"name\":\"组件预览\",\"parentId\":1,\"router\":\"/demo\",\"keepAlive\":1,\"isShow\":0,\"viewPath\":\"cool/modules/demo/views/demo.vue\",\"icon\":\"icon-favor\",\"orderNum\":10,\"createTime\":\"2021-01-12 14:12:20\",\"deleted_at\":null,\"id\":96,\"updateTime\":\"2021-03-08 23:02:40\"}');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (16, '2025-08-12 16:06:19.948', '2025-08-12 16:06:19.948', NULL, 1, 'POST:/admin/base/sys/menu/list', '188.253.126.213', '188.253.126.213', '');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (17, '2025-08-12 16:06:23.059', '2025-08-12 16:06:23.059', NULL, 1, 'GET:/admin/base/sys/menu/info', '188.253.126.213', '188.253.126.213', '');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (18, '2025-08-12 16:06:23.061', '2025-08-12 16:06:23.061', NULL, 1, 'POST:/admin/base/sys/menu/list', '188.253.126.213', '188.253.126.213', '');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (19, '2025-08-12 16:06:27.029', '2025-08-12 16:06:27.029', NULL, 1, 'POST:/admin/base/sys/menu/update', '188.253.126.213', '188.253.126.213', '{\"type\":0,\"name\":\"组件库\",\"parentId\":1,\"isShow\":0,\"icon\":\"icon-common\",\"orderNum\":11,\"createTime\":\"2019-11-07 22:36:57\",\"deleted_at\":null,\"id\":45,\"updateTime\":\"2019-11-11 15:21:10\"}');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (20, '2025-08-12 16:06:27.286', '2025-08-12 16:06:27.286', NULL, 1, 'POST:/admin/base/sys/menu/list', '188.253.126.213', '188.253.126.213', '');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (21, '2025-08-12 16:06:31.953', '2025-08-12 16:06:31.953', NULL, 0, 'GET:/admin/base/open/eps', '188.253.126.213', '188.253.126.213', '');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (22, '2025-08-12 16:06:32.226', '2025-08-12 16:06:32.226', NULL, 1, 'POST:/admin/base/sys/menu/list', '188.253.126.213', '188.253.126.213', '');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (23, '2025-08-12 16:07:08.684', '2025-08-12 16:07:08.684', NULL, 1, 'POST:/admin/base/sys/menu/add', '188.253.126.213', '188.253.126.213', '{\"type\":1,\"isShow\":true,\"viewPath\":\"modules/claude/views/session.vue\",\"module\":\"claude\",\"entity\":[\"claude\",\"session\"],\"name\":\"账号管理\",\"router\":\"/claude/session\",\"parentId\":1,\"keepAlive\":true,\"icon\":\"icon-message\",\"orderNum\":1}');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (24, '2025-08-12 16:07:08.937', '2025-08-12 16:07:08.937', NULL, 1, 'POST:/admin/base/sys/menu/add', '188.253.126.213', '188.253.126.213', '[{\"type\":2,\"parentId\":207,\"name\":\"add\",\"perms\":\"claude:session:add\"},{\"type\":2,\"parentId\":207,\"name\":\"addbulk\",\"perms\":\"claude:session:addbulk\"},{\"type\":2,\"parentId\":207,\"name\":\"delete\",\"perms\":\"claude:session:delete\"},{\"type\":2,\"parentId\":207,\"name\":\"info\",\"perms\":\"claude:session:info\"},{\"type\":2,\"parentId\":207,\"name\":\"list\",\"perms\":\"claude:session:list\"},{\"type\":2,\"parentId\":207,\"name\":\"page\",\"perms\":\"claude:session:page\"},{\"type\":2,\"parentId\":207,\"name\":\"update\",\"perms\":\"claude:session:update,claude:session:info\"}]');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (25, '2025-08-12 16:07:18.558', '2025-08-12 16:07:18.558', NULL, 0, 'GET:/admin/base/open/eps', '188.253.126.213', '188.253.126.213', '');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (26, '2025-08-12 16:07:19.065', '2025-08-12 16:07:19.065', NULL, 1, 'GET:/admin/base/comm/person', '188.253.126.213', '188.253.126.213', '');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (27, '2025-08-12 16:07:19.074', '2025-08-12 16:07:19.074', NULL, 1, 'GET:/admin/base/comm/permmenu', '188.253.126.213', '188.253.126.213', '');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (28, '2025-08-12 16:07:19.537', '2025-08-12 16:07:19.537', NULL, 1, 'POST:/admin/dict/info/data', '188.253.126.213', '188.253.126.213', '{}');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (29, '2025-08-12 16:07:22.181', '2025-08-12 16:07:22.181', NULL, 1, 'POST:/admin/base/sys/menu/list', '188.253.126.213', '188.253.126.213', '');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (30, '2025-08-12 16:07:28.772', '2025-08-12 16:07:28.772', NULL, 0, 'GET:/admin/base/open/eps', '188.253.126.213', '188.253.126.213', '');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (31, '2025-08-12 16:07:29.049', '2025-08-12 16:07:29.049', NULL, 1, 'POST:/admin/base/sys/menu/list', '188.253.126.213', '188.253.126.213', '');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (32, '2025-08-12 16:07:45.451', '2025-08-12 16:07:45.451', NULL, 1, 'POST:/admin/base/sys/menu/add', '188.253.126.213', '188.253.126.213', '{\"type\":1,\"isShow\":true,\"viewPath\":\"modules/claude/views/conversations.vue\",\"module\":\"claude\",\"entity\":[\"claude\",\"conversations\"],\"name\":\"会话管理\",\"router\":\"/claude/conversations\",\"parentId\":1,\"keepAlive\":true,\"icon\":\"icon-menu\",\"orderNum\":2}');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (33, '2025-08-12 16:07:45.701', '2025-08-12 16:07:45.701', NULL, 1, 'POST:/admin/base/sys/menu/add', '188.253.126.213', '188.253.126.213', '[{\"type\":2,\"parentId\":215,\"name\":\"add\",\"perms\":\"claude:conversations:add\"},{\"type\":2,\"parentId\":215,\"name\":\"delete\",\"perms\":\"claude:conversations:delete\"},{\"type\":2,\"parentId\":215,\"name\":\"info\",\"perms\":\"claude:conversations:info\"},{\"type\":2,\"parentId\":215,\"name\":\"list\",\"perms\":\"claude:conversations:list\"},{\"type\":2,\"parentId\":215,\"name\":\"page\",\"perms\":\"claude:conversations:page\"},{\"type\":2,\"parentId\":215,\"name\":\"update\",\"perms\":\"claude:conversations:update,claude:conversations:info\"}]');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (34, '2025-08-12 16:07:51.414', '2025-08-12 16:07:51.414', NULL, 0, 'GET:/admin/base/open/eps', '188.253.126.213', '188.253.126.213', '');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (35, '2025-08-12 16:07:51.692', '2025-08-12 16:07:51.692', NULL, 1, 'GET:/admin/base/comm/permmenu', '188.253.126.213', '188.253.126.213', '');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (36, '2025-08-12 16:07:51.693', '2025-08-12 16:07:51.693', NULL, 1, 'GET:/admin/base/comm/person', '188.253.126.213', '188.253.126.213', '');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (37, '2025-08-12 16:07:51.952', '2025-08-12 16:07:51.952', NULL, 1, 'POST:/admin/dict/info/data', '188.253.126.213', '188.253.126.213', '{}');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (38, '2025-08-12 16:07:54.015', '2025-08-12 16:07:54.015', NULL, 1, 'POST:/admin/base/sys/menu/list', '188.253.126.213', '188.253.126.213', '');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (39, '2025-08-12 16:07:56.774', '2025-08-12 16:07:56.774', NULL, 1, 'POST:/admin/claude/session/page', '188.253.126.213', '188.253.126.213', '{\"page\":1,\"size\":20}');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (40, '2025-08-12 16:07:59.483', '2025-08-12 16:07:59.483', NULL, 1, 'POST:/admin/claude/conversations/page', '188.253.126.213', '188.253.126.213', '{\"page\":1,\"size\":20}');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (41, '2025-08-12 16:08:42.235', '2025-08-12 16:08:42.235', NULL, 1, 'POST:/admin/claude/conversations/page', '188.253.126.213', '188.253.126.213', '{\"page\":1,\"size\":20}');
-INSERT INTO `base_sys_log` (`id`, `createTime`, `updateTime`, `deleted_at`, `userId`, `action`, `ip`, `ipAddr`, `params`) VALUES (42, '2025-08-12 16:08:46.506', '2025-08-12 16:08:46.506', NULL, 1, 'POST:/admin/claude/session/page', '188.253.126.213', '188.253.126.213', '{\"page\":1,\"size\":20}');
 COMMIT;
 
 -- ----------------------------
@@ -319,13 +277,13 @@ CREATE TABLE `base_sys_menu` (
   `updateTime` datetime(3) NOT NULL COMMENT '更新时间',
   `deleted_at` datetime(3) DEFAULT NULL,
   `parentId` bigint DEFAULT NULL,
-  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `router` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `perms` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `router` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `perms` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `type` int NOT NULL,
-  `icon` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `icon` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `orderNum` int NOT NULL DEFAULT '0',
-  `viewPath` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `viewPath` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `keepAlive` int NOT NULL DEFAULT '1',
   `isShow` int NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`),
@@ -418,11 +376,11 @@ CREATE TABLE `base_sys_param` (
   `createTime` datetime(3) NOT NULL COMMENT '创建时间',
   `updateTime` datetime(3) NOT NULL COMMENT '更新时间',
   `deleted_at` datetime(3) DEFAULT NULL,
-  `keyName` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `data` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `keyName` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `data` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `dataType` int NOT NULL DEFAULT '0',
-  `remark` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `remark` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `idx_base_sys_param_deleted_at` (`deleted_at`),
   KEY `IDX_cf19b5e52d8c71caa9c4534454` (`keyName`)
@@ -445,10 +403,10 @@ CREATE TABLE `base_sys_role` (
   `createTime` datetime(3) NOT NULL COMMENT '创建时间',
   `updateTime` datetime(3) NOT NULL COMMENT '更新时间',
   `deleted_at` datetime(3) DEFAULT NULL,
-  `userId` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `label` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `remark` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `userId` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `label` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `remark` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `relevance` int NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`),
   KEY `idx_base_sys_role_deleted_at` (`deleted_at`),
@@ -808,17 +766,17 @@ CREATE TABLE `base_sys_user` (
   `updateTime` datetime(3) NOT NULL COMMENT '更新时间',
   `deleted_at` datetime(3) DEFAULT NULL,
   `departmentId` bigint DEFAULT NULL,
-  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `username` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `username` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `passwordV` int NOT NULL DEFAULT '1',
-  `nickName` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `headImg` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `phone` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `nickName` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `headImg` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `phone` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `email` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `status` int NOT NULL DEFAULT '1',
-  `remark` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `socketId` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `remark` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `socketId` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `idx_base_sys_user_deleted_at` (`deleted_at`),
   KEY `idx_base_sys_user_department_id` (`departmentId`),
@@ -831,11 +789,6 @@ CREATE TABLE `base_sys_user` (
 -- ----------------------------
 BEGIN;
 INSERT INTO `base_sys_user` (`id`, `createTime`, `updateTime`, `deleted_at`, `departmentId`, `name`, `username`, `password`, `passwordV`, `nickName`, `headImg`, `phone`, `email`, `status`, `remark`, `socketId`) VALUES (1, '2021-02-24 21:16:41.525', '2021-02-27 18:21:16.000', NULL, 1, '超级管理员', 'admin', 'e10adc3949ba59abbe56e057f20f883e', 3, '管理员', 'https://cool-admin-pro.oss-cn-shanghai.aliyuncs.com/app/c8128c24-d0e9-4e07-9c0d-6f65446e105b.png', '18000000000', 'team@cool-js.com', 1, '拥有最高权限的用户', NULL);
-INSERT INTO `base_sys_user` (`id`, `createTime`, `updateTime`, `deleted_at`, `departmentId`, `name`, `username`, `password`, `passwordV`, `nickName`, `headImg`, `phone`, `email`, `status`, `remark`, `socketId`) VALUES (24, '2021-02-26 14:17:38.000', '2021-02-26 14:17:38.000', NULL, 11, '小白', 'xiaobai', 'e10adc3949ba59abbe56e057f20f883e', 1, '小白', NULL, NULL, NULL, 1, NULL, NULL);
-INSERT INTO `base_sys_user` (`id`, `createTime`, `updateTime`, `deleted_at`, `departmentId`, `name`, `username`, `password`, `passwordV`, `nickName`, `headImg`, `phone`, `email`, `status`, `remark`, `socketId`) VALUES (25, '2021-02-26 14:28:25.000', '2021-02-26 14:28:25.000', NULL, 12, '小黑', 'xiaohei', 'e10adc3949ba59abbe56e057f20f883e', 1, '小黑', NULL, NULL, NULL, 1, NULL, NULL);
-INSERT INTO `base_sys_user` (`id`, `createTime`, `updateTime`, `deleted_at`, `departmentId`, `name`, `username`, `password`, `passwordV`, `nickName`, `headImg`, `phone`, `email`, `status`, `remark`, `socketId`) VALUES (26, '2021-02-26 14:28:49.000', '2021-02-26 14:28:49.000', NULL, 12, '小绿', 'xiaolv', 'e10adc3949ba59abbe56e057f20f883e', 1, '小绿', NULL, NULL, NULL, 1, NULL, NULL);
-INSERT INTO `base_sys_user` (`id`, `createTime`, `updateTime`, `deleted_at`, `departmentId`, `name`, `username`, `password`, `passwordV`, `nickName`, `headImg`, `phone`, `email`, `status`, `remark`, `socketId`) VALUES (27, '2021-02-26 14:29:23.000', '2021-02-26 14:29:23.000', NULL, 13, '小青', 'xiaoqin', 'e10adc3949ba59abbe56e057f20f883e', 1, '小青', NULL, NULL, NULL, 1, NULL, NULL);
-INSERT INTO `base_sys_user` (`id`, `createTime`, `updateTime`, `deleted_at`, `departmentId`, `name`, `username`, `password`, `passwordV`, `nickName`, `headImg`, `phone`, `email`, `status`, `remark`, `socketId`) VALUES (28, '2021-02-26 14:29:52.000', '2021-02-26 14:29:52.000', NULL, 11, '神仙都没用', 'icssoa', 'e10adc3949ba59abbe56e057f20f883e', 1, '神仙都没用', 'https://cool-admin.cn.utools.club/uploads//20210226/0eeab9a0-77fc-11eb-b64f-674cd46b6601.jpg', NULL, NULL, 1, NULL, NULL);
 COMMIT;
 
 -- ----------------------------
@@ -897,18 +850,18 @@ CREATE TABLE `claude_conversations` (
   `createTime` datetime(3) NOT NULL COMMENT '创建时间',
   `updateTime` datetime(3) NOT NULL COMMENT '更新时间',
   `deleted_at` datetime(3) DEFAULT NULL,
-  `username` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '用户名',
-  `convid` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '会话id',
-  `title` text COLLATE utf8mb4_unicode_ci COMMENT '会话标题',
-  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '官网账号邮箱',
+  `username` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '用户名',
+  `convid` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '会话id',
+  `title` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci COMMENT '会话标题',
+  `email` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '官网账号邮箱',
   `is_starred` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否收藏',
-  `content` longtext COLLATE utf8mb4_unicode_ci COMMENT '会话内容',
+  `content` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci COMMENT '会话内容',
   PRIMARY KEY (`id`),
   KEY `idx_claude_conversations_deleted_at` (`deleted_at`),
   KEY `idx_claude_conversations_username` (`username`),
   KEY `idx_claude_conversations_conv_id` (`convid`),
   KEY `idx_claude_conversations_email` (`email`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- ----------------------------
 -- Records of claude_conversations
@@ -925,18 +878,18 @@ CREATE TABLE `claude_session` (
   `createTime` datetime(3) NOT NULL COMMENT '创建时间',
   `updateTime` datetime(3) NOT NULL COMMENT '更新时间',
   `deleted_at` datetime(3) DEFAULT NULL,
-  `email` longtext COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '邮箱',
-  `password` longtext COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '密码',
+  `email` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '邮箱',
+  `password` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '密码',
   `status` tinyint(1) DEFAULT '0' COMMENT '状态',
-  `carID` longtext COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '车号',
-  `type` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'free' COMMENT '类型,free,pro,max',
-  `session` longtext COLLATE utf8mb4_unicode_ci COMMENT 'session',
-  `remark` longtext COLLATE utf8mb4_unicode_ci COMMENT '备注',
+  `carID` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '车号',
+  `type` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'free' COMMENT '类型,free,pro,max',
+  `session` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci COMMENT 'session',
+  `remark` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci COMMENT '备注',
   `sort` bigint DEFAULT '0' COMMENT '排序',
   `count` bigint DEFAULT '0' COMMENT '日请求量',
   PRIMARY KEY (`id`),
   KEY `idx_claude_session_deleted_at` (`deleted_at`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- ----------------------------
 -- Records of claude_session
@@ -954,9 +907,9 @@ CREATE TABLE `dict_info` (
   `updateTime` datetime(3) NOT NULL COMMENT '更新时间',
   `deleted_at` datetime(3) DEFAULT NULL,
   `typeId` int NOT NULL,
-  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `orderNum` int NOT NULL,
-  `remark` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `remark` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `parentId` int DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `idx_dict_info_deleted_at` (`deleted_at`)
@@ -966,11 +919,6 @@ CREATE TABLE `dict_info` (
 -- Records of dict_info
 -- ----------------------------
 BEGIN;
-INSERT INTO `dict_info` (`id`, `createTime`, `updateTime`, `deleted_at`, `typeId`, `name`, `orderNum`, `remark`, `parentId`) VALUES (1, '2022-07-06 14:18:53.841', '2022-07-06 14:19:10.954', NULL, 1, '衣服', 2, NULL, NULL);
-INSERT INTO `dict_info` (`id`, `createTime`, `updateTime`, `deleted_at`, `typeId`, `name`, `orderNum`, `remark`, `parentId`) VALUES (2, '2022-07-06 14:18:59.834', '2022-07-06 14:18:59.834', NULL, 1, '裤子', 1, NULL, NULL);
-INSERT INTO `dict_info` (`id`, `createTime`, `updateTime`, `deleted_at`, `typeId`, `name`, `orderNum`, `remark`, `parentId`) VALUES (3, '2022-07-06 14:19:03.993', '2022-07-06 14:19:15.251', NULL, 1, '鞋子', 3, NULL, NULL);
-INSERT INTO `dict_info` (`id`, `createTime`, `updateTime`, `deleted_at`, `typeId`, `name`, `orderNum`, `remark`, `parentId`) VALUES (4, '2022-07-06 14:21:47.122', '2022-07-06 14:22:26.131', NULL, 2, '闪酷', 2, NULL, NULL);
-INSERT INTO `dict_info` (`id`, `createTime`, `updateTime`, `deleted_at`, `typeId`, `name`, `orderNum`, `remark`, `parentId`) VALUES (5, '2022-07-06 14:22:18.309', '2022-07-06 14:22:18.309', NULL, 2, 'COOL', 1, NULL, NULL);
 COMMIT;
 
 -- ----------------------------
@@ -982,8 +930,8 @@ CREATE TABLE `dict_type` (
   `createTime` datetime(3) NOT NULL COMMENT '创建时间',
   `updateTime` datetime(3) NOT NULL COMMENT '更新时间',
   `deleted_at` datetime(3) DEFAULT NULL,
-  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `key` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `key` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`),
   KEY `idx_dict_type_deleted_at` (`deleted_at`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -992,8 +940,6 @@ CREATE TABLE `dict_type` (
 -- Records of dict_type
 -- ----------------------------
 BEGIN;
-INSERT INTO `dict_type` (`id`, `createTime`, `updateTime`, `deleted_at`, `name`, `key`) VALUES (1, '2022-07-06 14:18:41.879', '2022-07-06 14:18:41.879', NULL, '类别', 'type');
-INSERT INTO `dict_type` (`id`, `createTime`, `updateTime`, `deleted_at`, `name`, `key`) VALUES (2, '2022-07-06 14:21:33.778', '2022-07-06 14:21:33.778', NULL, '品牌', 'brand');
 COMMIT;
 
 -- ----------------------------
@@ -1005,8 +951,8 @@ CREATE TABLE `space_info` (
   `createTime` datetime(3) NOT NULL COMMENT '创建时间',
   `updateTime` datetime(3) NOT NULL COMMENT '更新时间',
   `deleted_at` datetime(3) DEFAULT NULL,
-  `url` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '地址',
-  `type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '类型',
+  `url` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '地址',
+  `type` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '类型',
   `classifyId` bigint DEFAULT NULL COMMENT '分类ID',
   PRIMARY KEY (`id`),
   KEY `idx_space_info_deleted_at` (`deleted_at`)
@@ -1027,7 +973,7 @@ CREATE TABLE `space_type` (
   `createTime` datetime(3) NOT NULL COMMENT '创建时间',
   `updateTime` datetime(3) NOT NULL COMMENT '更新时间',
   `deleted_at` datetime(3) DEFAULT NULL,
-  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '类别名称 ',
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '类别名称 ',
   `parentId` int DEFAULT NULL COMMENT '父分类ID',
   PRIMARY KEY (`id`),
   KEY `idx_space_type_deleted_at` (`deleted_at`)
@@ -1048,18 +994,18 @@ CREATE TABLE `task_info` (
   `createTime` datetime(3) NOT NULL COMMENT '创建时间',
   `updateTime` datetime(3) NOT NULL COMMENT '更新时间',
   `deleted_at` datetime(3) DEFAULT NULL,
-  `jobId` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '任务ID',
-  `repeatConf` longtext COLLATE utf8mb4_unicode_ci COMMENT '重复配置',
-  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '任务名称',
-  `cron` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT 'cron表达式',
+  `jobId` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '任务ID',
+  `repeatConf` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci COMMENT '重复配置',
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '任务名称',
+  `cron` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT 'cron表达式',
   `limit` bigint DEFAULT NULL COMMENT '限制次数 不传为不限制',
   `every` bigint DEFAULT NULL COMMENT '间隔时间 单位秒',
-  `remark` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '备注',
+  `remark` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '备注',
   `status` bigint DEFAULT NULL COMMENT '状态 0:关闭 1:开启',
   `startDate` datetime(3) DEFAULT NULL COMMENT '开始时间',
   `endDate` datetime(3) DEFAULT NULL COMMENT '结束时间',
-  `data` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '数据',
-  `service` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '执行的服务',
+  `data` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '数据',
+  `service` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '执行的服务',
   `type` bigint DEFAULT NULL COMMENT '类型 0:系统 1:用户',
   `nextRunTime` datetime(3) DEFAULT NULL COMMENT '下次执行时间',
   `taskType` bigint DEFAULT NULL COMMENT '任务类型 0:cron 1:时间间隔',
@@ -1071,7 +1017,7 @@ CREATE TABLE `task_info` (
 -- Records of task_info
 -- ----------------------------
 BEGIN;
-INSERT INTO `task_info` (`id`, `createTime`, `updateTime`, `deleted_at`, `jobId`, `repeatConf`, `name`, `cron`, `limit`, `every`, `remark`, `status`, `startDate`, `endDate`, `data`, `service`, `type`, `nextRunTime`, `taskType`) VALUES (1, '2022-10-19 17:15:03.000', '2025-08-12 16:02:32.751', NULL, NULL, NULL, '清理日志', '1 2 3 * * *', NULL, NULL, '每天03:02:01执行清理缓存任务', 1, NULL, NULL, NULL, 'BaseFuncClearLog(false)', 0, '2025-08-13 11:02:01.000', 0);
+INSERT INTO `task_info` (`id`, `createTime`, `updateTime`, `deleted_at`, `jobId`, `repeatConf`, `name`, `cron`, `limit`, `every`, `remark`, `status`, `startDate`, `endDate`, `data`, `service`, `type`, `nextRunTime`, `taskType`) VALUES (1, '2022-10-19 17:15:03.000', '2025-09-03 17:00:41.255', NULL, NULL, NULL, '清理日志', '1 2 3 * * *', NULL, NULL, '每天03:02:01执行清理缓存任务', 1, NULL, NULL, NULL, 'BaseFuncClearLog(false)', 0, '2025-09-04 11:02:01.000', 0);
 COMMIT;
 
 -- ----------------------------
@@ -1085,10 +1031,10 @@ CREATE TABLE `task_log` (
   `deleted_at` datetime(3) DEFAULT NULL,
   `taskId` bigint unsigned DEFAULT NULL COMMENT '任务ID',
   `status` tinyint unsigned NOT NULL COMMENT '状态 0:失败 1:成功',
-  `detail` longtext COLLATE utf8mb4_unicode_ci COMMENT '详情',
+  `detail` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci COMMENT '详情',
   PRIMARY KEY (`id`),
   KEY `idx_task_log_deleted_at` (`deleted_at`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- ----------------------------
 -- Records of task_log
