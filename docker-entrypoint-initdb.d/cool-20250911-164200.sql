@@ -5,13 +5,13 @@
  Source Server Type    : MySQL
  Source Server Version : 80406
  Source Host           : localhost:60828
- Source Schema         : cool
+ Source Schema         : cool-test
 
  Target Server Type    : MySQL
  Target Server Version : 80406
  File Encoding         : 65001
 
- Date: 03/09/2025 17:04:51
+ Date: 11/09/2025 16:40:28
 */
 
 SET NAMES utf8mb4;
@@ -31,112 +31,112 @@ CREATE TABLE `base_eps_admin` (
   `tag` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   `dts` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1201 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1701 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- ----------------------------
 -- Records of base_eps_admin
 -- ----------------------------
 BEGIN;
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1101, 'base', 'POST', '/logout', '/admin/base/comm', 'logout', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1102, 'base', 'GET', '/permmenu', '/admin/base/comm', 'permmenu', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1103, 'base', 'GET', '/person', '/admin/base/comm', 'person', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1104, 'base', 'POST', '/personUpdate', '/admin/base/comm', 'personUpdate', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1105, 'base', 'POST', '/upload', '/admin/base/comm', 'upload', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1106, 'base', 'GET', '/uploadMode', '/admin/base/comm', 'uploadMode', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1107, 'base', 'GET', '/captcha', '/admin/base/open', 'captcha', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1108, 'base', 'GET', '/eps', '/admin/base/open', 'eps', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1109, 'base', 'POST', '/login', '/admin/base/open', 'login', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1110, 'base', 'GET', '/refreshToken', '/admin/base/open', 'refreshToken', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1111, 'base', 'POST', '/add', '/admin/base/sys/department', 'add', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1112, 'base', 'POST', '/delete', '/admin/base/sys/department', 'delete', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1113, 'base', 'GET', '/info', '/admin/base/sys/department', 'info', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1114, 'base', 'POST', '/list', '/admin/base/sys/department', 'list', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1115, 'base', 'GET', '/order', '/admin/base/sys/department', 'order', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1116, 'base', 'POST', '/page', '/admin/base/sys/department', 'page', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1117, 'base', 'POST', '/update', '/admin/base/sys/department', 'update', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1118, 'base', 'POST', '/add', '/admin/base/sys/log', 'add', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1119, 'base', 'POST', '/clear', '/admin/base/sys/log', 'clear', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1120, 'base', 'POST', '/delete', '/admin/base/sys/log', 'delete', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1121, 'base', 'GET', '/getKeep', '/admin/base/sys/log', 'getKeep', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1122, 'base', 'GET', '/info', '/admin/base/sys/log', 'info', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1123, 'base', 'POST', '/list', '/admin/base/sys/log', 'list', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1124, 'base', 'POST', '/page', '/admin/base/sys/log', 'page', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1125, 'base', 'POST', '/setKeep', '/admin/base/sys/log', 'setKeep', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1126, 'base', 'POST', '/update', '/admin/base/sys/log', 'update', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1127, 'base', 'POST', '/add', '/admin/base/sys/menu', 'add', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1128, 'base', 'POST', '/delete', '/admin/base/sys/menu', 'delete', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1129, 'base', 'GET', '/info', '/admin/base/sys/menu', 'info', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1130, 'base', 'POST', '/list', '/admin/base/sys/menu', 'list', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1131, 'base', 'POST', '/page', '/admin/base/sys/menu', 'page', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1132, 'base', 'POST', '/update', '/admin/base/sys/menu', 'update', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1133, 'base', 'POST', '/add', '/admin/base/sys/param', 'add', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1134, 'base', 'POST', '/delete', '/admin/base/sys/param', 'delete', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1135, 'base', 'GET', '/html', '/admin/base/sys/param', 'html', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1136, 'base', 'GET', '/info', '/admin/base/sys/param', 'info', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1137, 'base', 'POST', '/list', '/admin/base/sys/param', 'list', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1138, 'base', 'POST', '/page', '/admin/base/sys/param', 'page', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1139, 'base', 'POST', '/update', '/admin/base/sys/param', 'update', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1140, 'base', 'POST', '/add', '/admin/base/sys/role', 'add', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1141, 'base', 'POST', '/delete', '/admin/base/sys/role', 'delete', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1142, 'base', 'GET', '/info', '/admin/base/sys/role', 'info', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1143, 'base', 'POST', '/list', '/admin/base/sys/role', 'list', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1144, 'base', 'POST', '/page', '/admin/base/sys/role', 'page', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1145, 'base', 'POST', '/update', '/admin/base/sys/role', 'update', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1146, 'base', 'POST', '/add', '/admin/base/sys/user', 'add', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1147, 'base', 'POST', '/delete', '/admin/base/sys/user', 'delete', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1148, 'base', 'GET', '/info', '/admin/base/sys/user', 'info', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1149, 'base', 'POST', '/list', '/admin/base/sys/user', 'list', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1150, 'base', 'GET', '/move', '/admin/base/sys/user', 'move', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1151, 'base', 'POST', '/page', '/admin/base/sys/user', 'page', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1152, 'base', 'POST', '/update', '/admin/base/sys/user', 'update', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1153, 'claude', 'POST', '/add', '/admin/claude/conversations', 'add', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1154, 'claude', 'POST', '/delete', '/admin/claude/conversations', 'delete', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1155, 'claude', 'GET', '/info', '/admin/claude/conversations', 'info', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1156, 'claude', 'POST', '/list', '/admin/claude/conversations', 'list', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1157, 'claude', 'POST', '/page', '/admin/claude/conversations', 'page', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1158, 'claude', 'POST', '/update', '/admin/claude/conversations', 'update', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1159, 'claude', 'POST', '/add', '/admin/claude/session', 'add', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1160, 'claude', 'POST', '/addbulk', '/admin/claude/session', 'addbulk', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1161, 'claude', 'POST', '/delete', '/admin/claude/session', 'delete', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1162, 'claude', 'GET', '/info', '/admin/claude/session', 'info', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1163, 'claude', 'POST', '/list', '/admin/claude/session', 'list', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1164, 'claude', 'POST', '/page', '/admin/claude/session', 'page', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1165, 'claude', 'POST', '/update', '/admin/claude/session', 'update', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1166, 'dict', 'POST', '/add', '/admin/dict/info', 'add', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1167, 'dict', 'POST', '/data', '/admin/dict/info', 'data', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1168, 'dict', 'POST', '/delete', '/admin/dict/info', 'delete', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1169, 'dict', 'GET', '/info', '/admin/dict/info', 'info', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1170, 'dict', 'POST', '/list', '/admin/dict/info', 'list', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1171, 'dict', 'POST', '/page', '/admin/dict/info', 'page', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1172, 'dict', 'POST', '/update', '/admin/dict/info', 'update', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1173, 'dict', 'POST', '/add', '/admin/dict/type', 'add', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1174, 'dict', 'POST', '/delete', '/admin/dict/type', 'delete', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1175, 'dict', 'GET', '/info', '/admin/dict/type', 'info', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1176, 'dict', 'POST', '/list', '/admin/dict/type', 'list', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1177, 'dict', 'POST', '/page', '/admin/dict/type', 'page', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1178, 'dict', 'POST', '/update', '/admin/dict/type', 'update', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1179, 'space', 'POST', '/add', '/admin/space/info', 'add', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1180, 'space', 'POST', '/delete', '/admin/space/info', 'delete', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1181, 'space', 'GET', '/info', '/admin/space/info', 'info', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1182, 'space', 'POST', '/list', '/admin/space/info', 'list', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1183, 'space', 'POST', '/page', '/admin/space/info', 'page', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1184, 'space', 'POST', '/update', '/admin/space/info', 'update', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1185, 'space', 'POST', '/add', '/admin/space/type', 'add', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1186, 'space', 'POST', '/delete', '/admin/space/type', 'delete', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1187, 'space', 'GET', '/info', '/admin/space/type', 'info', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1188, 'space', 'POST', '/list', '/admin/space/type', 'list', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1189, 'space', 'POST', '/page', '/admin/space/type', 'page', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1190, 'space', 'POST', '/update', '/admin/space/type', 'update', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1191, 'task', 'POST', '/add', '/admin/task/info', 'add', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1192, 'task', 'POST', '/delete', '/admin/task/info', 'delete', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1193, 'task', 'GET', '/info', '/admin/task/info', 'info', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1194, 'task', 'POST', '/list', '/admin/task/info', 'list', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1195, 'task', 'GET', '/log', '/admin/task/info', 'log', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1196, 'task', 'POST', '/once', '/admin/task/info', 'once', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1197, 'task', 'POST', '/page', '/admin/task/info', 'page', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1198, 'task', 'GET', '/start', '/admin/task/info', 'start', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1199, 'task', 'GET', '/stop', '/admin/task/info', 'stop', '', '');
-INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1200, 'task', 'POST', '/update', '/admin/task/info', 'update', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1601, 'base', 'POST', '/logout', '/admin/base/comm', 'logout', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1602, 'base', 'GET', '/permmenu', '/admin/base/comm', 'permmenu', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1603, 'base', 'GET', '/person', '/admin/base/comm', 'person', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1604, 'base', 'POST', '/personUpdate', '/admin/base/comm', 'personUpdate', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1605, 'base', 'POST', '/upload', '/admin/base/comm', 'upload', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1606, 'base', 'GET', '/uploadMode', '/admin/base/comm', 'uploadMode', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1607, 'base', 'GET', '/captcha', '/admin/base/open', 'captcha', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1608, 'base', 'GET', '/eps', '/admin/base/open', 'eps', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1609, 'base', 'POST', '/login', '/admin/base/open', 'login', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1610, 'base', 'GET', '/refreshToken', '/admin/base/open', 'refreshToken', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1611, 'base', 'POST', '/add', '/admin/base/sys/department', 'add', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1612, 'base', 'POST', '/delete', '/admin/base/sys/department', 'delete', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1613, 'base', 'GET', '/info', '/admin/base/sys/department', 'info', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1614, 'base', 'POST', '/list', '/admin/base/sys/department', 'list', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1615, 'base', 'GET', '/order', '/admin/base/sys/department', 'order', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1616, 'base', 'POST', '/page', '/admin/base/sys/department', 'page', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1617, 'base', 'POST', '/update', '/admin/base/sys/department', 'update', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1618, 'base', 'POST', '/add', '/admin/base/sys/log', 'add', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1619, 'base', 'POST', '/clear', '/admin/base/sys/log', 'clear', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1620, 'base', 'POST', '/delete', '/admin/base/sys/log', 'delete', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1621, 'base', 'GET', '/getKeep', '/admin/base/sys/log', 'getKeep', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1622, 'base', 'GET', '/info', '/admin/base/sys/log', 'info', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1623, 'base', 'POST', '/list', '/admin/base/sys/log', 'list', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1624, 'base', 'POST', '/page', '/admin/base/sys/log', 'page', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1625, 'base', 'POST', '/setKeep', '/admin/base/sys/log', 'setKeep', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1626, 'base', 'POST', '/update', '/admin/base/sys/log', 'update', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1627, 'base', 'POST', '/add', '/admin/base/sys/menu', 'add', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1628, 'base', 'POST', '/delete', '/admin/base/sys/menu', 'delete', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1629, 'base', 'GET', '/info', '/admin/base/sys/menu', 'info', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1630, 'base', 'POST', '/list', '/admin/base/sys/menu', 'list', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1631, 'base', 'POST', '/page', '/admin/base/sys/menu', 'page', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1632, 'base', 'POST', '/update', '/admin/base/sys/menu', 'update', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1633, 'base', 'POST', '/add', '/admin/base/sys/param', 'add', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1634, 'base', 'POST', '/delete', '/admin/base/sys/param', 'delete', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1635, 'base', 'GET', '/html', '/admin/base/sys/param', 'html', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1636, 'base', 'GET', '/info', '/admin/base/sys/param', 'info', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1637, 'base', 'POST', '/list', '/admin/base/sys/param', 'list', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1638, 'base', 'POST', '/page', '/admin/base/sys/param', 'page', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1639, 'base', 'POST', '/update', '/admin/base/sys/param', 'update', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1640, 'base', 'POST', '/add', '/admin/base/sys/role', 'add', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1641, 'base', 'POST', '/delete', '/admin/base/sys/role', 'delete', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1642, 'base', 'GET', '/info', '/admin/base/sys/role', 'info', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1643, 'base', 'POST', '/list', '/admin/base/sys/role', 'list', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1644, 'base', 'POST', '/page', '/admin/base/sys/role', 'page', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1645, 'base', 'POST', '/update', '/admin/base/sys/role', 'update', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1646, 'base', 'POST', '/add', '/admin/base/sys/user', 'add', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1647, 'base', 'POST', '/delete', '/admin/base/sys/user', 'delete', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1648, 'base', 'GET', '/info', '/admin/base/sys/user', 'info', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1649, 'base', 'POST', '/list', '/admin/base/sys/user', 'list', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1650, 'base', 'GET', '/move', '/admin/base/sys/user', 'move', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1651, 'base', 'POST', '/page', '/admin/base/sys/user', 'page', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1652, 'base', 'POST', '/update', '/admin/base/sys/user', 'update', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1653, 'claude', 'POST', '/add', '/admin/claude/conversations', 'add', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1654, 'claude', 'POST', '/delete', '/admin/claude/conversations', 'delete', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1655, 'claude', 'GET', '/info', '/admin/claude/conversations', 'info', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1656, 'claude', 'POST', '/list', '/admin/claude/conversations', 'list', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1657, 'claude', 'POST', '/page', '/admin/claude/conversations', 'page', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1658, 'claude', 'POST', '/update', '/admin/claude/conversations', 'update', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1659, 'claude', 'POST', '/add', '/admin/claude/session', 'add', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1660, 'claude', 'POST', '/addbulk', '/admin/claude/session', 'addbulk', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1661, 'claude', 'POST', '/delete', '/admin/claude/session', 'delete', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1662, 'claude', 'GET', '/info', '/admin/claude/session', 'info', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1663, 'claude', 'POST', '/list', '/admin/claude/session', 'list', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1664, 'claude', 'POST', '/page', '/admin/claude/session', 'page', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1665, 'claude', 'POST', '/update', '/admin/claude/session', 'update', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1666, 'dict', 'POST', '/add', '/admin/dict/info', 'add', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1667, 'dict', 'POST', '/data', '/admin/dict/info', 'data', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1668, 'dict', 'POST', '/delete', '/admin/dict/info', 'delete', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1669, 'dict', 'GET', '/info', '/admin/dict/info', 'info', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1670, 'dict', 'POST', '/list', '/admin/dict/info', 'list', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1671, 'dict', 'POST', '/page', '/admin/dict/info', 'page', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1672, 'dict', 'POST', '/update', '/admin/dict/info', 'update', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1673, 'dict', 'POST', '/add', '/admin/dict/type', 'add', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1674, 'dict', 'POST', '/delete', '/admin/dict/type', 'delete', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1675, 'dict', 'GET', '/info', '/admin/dict/type', 'info', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1676, 'dict', 'POST', '/list', '/admin/dict/type', 'list', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1677, 'dict', 'POST', '/page', '/admin/dict/type', 'page', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1678, 'dict', 'POST', '/update', '/admin/dict/type', 'update', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1679, 'space', 'POST', '/add', '/admin/space/info', 'add', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1680, 'space', 'POST', '/delete', '/admin/space/info', 'delete', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1681, 'space', 'GET', '/info', '/admin/space/info', 'info', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1682, 'space', 'POST', '/list', '/admin/space/info', 'list', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1683, 'space', 'POST', '/page', '/admin/space/info', 'page', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1684, 'space', 'POST', '/update', '/admin/space/info', 'update', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1685, 'space', 'POST', '/add', '/admin/space/type', 'add', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1686, 'space', 'POST', '/delete', '/admin/space/type', 'delete', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1687, 'space', 'GET', '/info', '/admin/space/type', 'info', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1688, 'space', 'POST', '/list', '/admin/space/type', 'list', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1689, 'space', 'POST', '/page', '/admin/space/type', 'page', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1690, 'space', 'POST', '/update', '/admin/space/type', 'update', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1691, 'task', 'POST', '/add', '/admin/task/info', 'add', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1692, 'task', 'POST', '/delete', '/admin/task/info', 'delete', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1693, 'task', 'GET', '/info', '/admin/task/info', 'info', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1694, 'task', 'POST', '/list', '/admin/task/info', 'list', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1695, 'task', 'GET', '/log', '/admin/task/info', 'log', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1696, 'task', 'POST', '/once', '/admin/task/info', 'once', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1697, 'task', 'POST', '/page', '/admin/task/info', 'page', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1698, 'task', 'GET', '/start', '/admin/task/info', 'start', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1699, 'task', 'GET', '/stop', '/admin/task/info', 'stop', '', '');
+INSERT INTO `base_eps_admin` (`id`, `module`, `method`, `path`, `prefix`, `summary`, `tag`, `dts`) VALUES (1700, 'task', 'POST', '/update', '/admin/task/info', 'update', '', '');
 COMMIT;
 
 -- ----------------------------
@@ -259,7 +259,7 @@ CREATE TABLE `base_sys_log` (
   KEY `IDX_938f886fb40e163db174b7f6c3` (`action`),
   KEY `IDX_24e18767659f8c7142580893f2` (`ip`),
   KEY `IDX_a03a27f75cf8d502b3060823e1` (`ipAddr`)
-) ENGINE=InnoDB AUTO_INCREMENT=401 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=459 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- ----------------------------
 -- Records of base_sys_log
@@ -856,12 +856,14 @@ CREATE TABLE `claude_conversations` (
   `email` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '官网账号邮箱',
   `is_starred` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否收藏',
   `content` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci COMMENT '会话内容',
+  `orgid` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '组织ID',
   PRIMARY KEY (`id`),
   KEY `idx_claude_conversations_deleted_at` (`deleted_at`),
   KEY `idx_claude_conversations_username` (`username`),
   KEY `idx_claude_conversations_conv_id` (`convid`),
-  KEY `idx_claude_conversations_email` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  KEY `idx_claude_conversations_email` (`email`),
+  KEY `idx_claude_conversations_org_id` (`orgid`)
+) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- ----------------------------
 -- Records of claude_conversations
@@ -889,7 +891,7 @@ CREATE TABLE `claude_session` (
   `count` bigint DEFAULT '0' COMMENT '日请求量',
   PRIMARY KEY (`id`),
   KEY `idx_claude_session_deleted_at` (`deleted_at`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- ----------------------------
 -- Records of claude_session
@@ -1017,7 +1019,7 @@ CREATE TABLE `task_info` (
 -- Records of task_info
 -- ----------------------------
 BEGIN;
-INSERT INTO `task_info` (`id`, `createTime`, `updateTime`, `deleted_at`, `jobId`, `repeatConf`, `name`, `cron`, `limit`, `every`, `remark`, `status`, `startDate`, `endDate`, `data`, `service`, `type`, `nextRunTime`, `taskType`) VALUES (1, '2022-10-19 17:15:03.000', '2025-09-03 17:00:41.255', NULL, NULL, NULL, '清理日志', '1 2 3 * * *', NULL, NULL, '每天03:02:01执行清理缓存任务', 1, NULL, NULL, NULL, 'BaseFuncClearLog(false)', 0, '2025-09-04 11:02:01.000', 0);
+INSERT INTO `task_info` (`id`, `createTime`, `updateTime`, `deleted_at`, `jobId`, `repeatConf`, `name`, `cron`, `limit`, `every`, `remark`, `status`, `startDate`, `endDate`, `data`, `service`, `type`, `nextRunTime`, `taskType`) VALUES (1, '2022-10-19 17:15:03.000', '2025-09-11 15:51:36.964', NULL, NULL, NULL, '清理日志', '1 2 3 * * *', NULL, NULL, '每天03:02:01执行清理缓存任务', 1, NULL, NULL, NULL, 'BaseFuncClearLog(false)', 0, '2025-09-12 11:02:01.000', 0);
 COMMIT;
 
 -- ----------------------------
@@ -1034,7 +1036,7 @@ CREATE TABLE `task_log` (
   `detail` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci COMMENT '详情',
   PRIMARY KEY (`id`),
   KEY `idx_task_log_deleted_at` (`deleted_at`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- ----------------------------
 -- Records of task_log
