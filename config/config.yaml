@@ -58,3 +58,14 @@ modules:
         enable: 1
       log:
         enable: 1
+
+# openai 内容审核
+OAIKEY: "" # OpenAI API key 用于内容审核
+MODERATION: ""
+# 模型速率限制
+DEFAULT: ""
+Opus4.1: ""
+Opus3: ""
+Sonnet4: ""
+Sonnet3.7: ""
+Haiku3.5: ""

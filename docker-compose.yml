@@ -15,6 +15,7 @@ services:
     volumes:
       - ./backend/manifest:/app/manifest
       - ./config/config.yaml:/app/config.yaml
+      - ./keywords.txt:/app/data/keywords.txt
     restart: unless-stopped
 
   mysql:
