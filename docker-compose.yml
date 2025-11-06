@@ -11,6 +11,7 @@ services:
       - CALLBACKURL= #本服务回调地址
       - XYUCENTER=  #xyucenter（认证中心）部署地址
       - APPID= #子应用ID
+      - APPSECRET= #子应用密钥
       - APPJWTSECRETKEY= #子应用JWT token秘钥
     volumes:
       - ./backend/manifest:/app/manifest
