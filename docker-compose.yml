@@ -14,6 +14,7 @@ services:
       - APPID= #子应用ID
       - APPSECRET= #子应用密钥
       - APPJWTSECRETKEY= #子应用JWT token秘钥
+      - AUDIT_LIMIT_URL= #自定义审核限流接口地址
     volumes:
       - ./backend/manifest:/app/manifest
       - ./config/config.yaml:/app/config.yaml
