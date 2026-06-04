@@ -15,6 +15,9 @@ services:
       - APPSECRET= #子应用密钥
       - APPJWTSECRETKEY= #子应用JWT token秘钥
       - AUDIT_LIMIT_URL= #自定义审核限流接口地址
+      - PROHIBIT_MULTIPLE_LOGIN = false #是否禁止多设备登录，true或false，默认为false
+      - PROHIBIT_CONCURRENT_REQUEST = false #是否禁止并发请求，true或false，默认为false
+      - ConversationNotifyUrl = #会话通知回调地址
     volumes:
       - ./backend/manifest:/app/manifest
       - ./config/config.yaml:/app/config.yaml
